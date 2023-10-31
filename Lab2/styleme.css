@@ -1,5 +1,6 @@
 .body{
  background-color: #595648;
+ text-align: left;
 }
 h1{
     color:#A3C0FD;
@@ -12,6 +13,8 @@ h2{
 }
 ol {
     list-style-type: decimal;
+    display: flex;
+    flex-direction: column-reverse;
 }
 .Italic{
     font-style: italic;
@@ -28,14 +31,34 @@ ol {
     font-weight: bold;
 }
 /* unvisited link */
-a:link { color: #FF0000; }
+a:link { color: #FF0000; 
+    text-decoration: none;
+}
 /* visited link */
-a:visited { color: #FF0000; }
+a:visited { color: #FF0000; 
+    text-decoration: none;
+}
 /* mouse over link */
-a:hover { color: #0000FF; }
+a:hover { color: #0000FF; 
+    text-decoration: none;
+}
 /* click on a link */
-a:active { color: #0000FF; }
-
+a:active { color: #0000FF; 
+    text-decoration: none
+}
 .img{
     width: 10%;
+}
+.flip:hover{
+    transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+}
+.first::first-letter {
+    font-size: x-large; /* Increase the size of the first letter */
+    font-weight: bold; /* Make it bold */
+}
+.pad{
+    padding-left: 30px;
 }
