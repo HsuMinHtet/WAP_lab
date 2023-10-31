@@ -1,0 +1,40 @@
+.body{
+ background-color: #595648;
+}
+h1{
+    color:#A3C0FD;
+    font-family: 'Arial', 'Verdana', 'Trebuchet MS','Georgia', 'Tahoma', 'Courier New', 'Times New Roman';
+
+}
+h2{
+    color:#A3C0FD;
+    font-family: 'Arial', 'Verdana', 'Trebuchet MS','Georgia', 'Tahoma', 'Courier New', 'Times New Roman';
+}
+ol {
+    list-style-type: decimal;
+}
+.Italic{
+    font-style: italic;
+}
+.fColor{
+    color: #DCD9D6;
+    font-size: 12;
+}
+.image{
+    width: 30%;
+}
+.highLight{
+    color: #EEEE9B;
+    font-weight: bold;
+}
+/* unvisited link */
+a:link { color: #FF0000; }
+/* visited link */
+a:visited { color: #FF0000; }
+/* mouse over link */
+a:hover { color: #0000FF; }
+/* click on a link */
+a:active { color: #0000FF; }
+.img{
+    width: 10%;
+}
