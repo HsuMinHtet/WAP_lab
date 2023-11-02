@@ -8,12 +8,69 @@
     <link href="style.css" type="text/css" rel="stylesheet" />
 </head>
 
-<body>
-    <div>
-        <img src="rectangle-list-regular.svg" class="image" />
-        <p>Welcome, HsuMinHtet</p>
-        <img src="arrow-right-from-bracket-solid.svg" class="image" />
+<body class="page">
+    <div class="icon-text-container">
+        <img class="logo" src="logo.jpeg" alt="Logo"/>
+        <p class="page_Head">Welcome, HsuMinHtet</p>
+        <button class="logout_btn" >Logout</button>
     </div>
+    <hr/>
+    <div><p>Product List</p></div>
+    <div>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>Node.js</td>
+                <td>9.99</td>
+                <td>8</td>
+                <td><img class="table_img" src="cart-plus-solid.svg" alt="cart"/></td>
+            </tr>
+            <tr>
+                <td>React</td>
+                <td>19.99</td>
+                <td>5</td>
+                <td><img class="table_img" src="cart-plus-solid.svg" alt="cart"/></td>
+            </tr>
+            <tr>
+                <td>Angular</td>
+                <td>29.99</td>
+                <td>13</td>
+                <td><img class="table_img" src="cart-plus-solid.svg" alt="cart"/></td>
+            </tr>
+        </table>
+    </div>
+    <div><p>Your Shopping Cart</p></div>
+    <div>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Stock</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>Node.js</td>
+                <td>9.99</td>
+                <td>8</td>
+                <td><button>+</button> <input type="text" name="quanitity"> <button>-</button></td>
+            </tr>
+            <tr>
+                <td>React</td>
+                <td>19.99</td>
+                <td>5</td>
+                <td><button>+</button> <input type="text" name="quanitity"> <button>-</button></td>
+            </tr>
+            <tr>
+                <td class="total" colspan="4" >Total:  300.98</td>
+            </tr>
+        </table>
+    </div>
+    <div><button class="order_btn">Place Order</button></div>
 </body>
 
 </html>
