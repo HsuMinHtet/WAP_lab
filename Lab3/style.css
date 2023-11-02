@@ -19,7 +19,7 @@
     border: 2px solid black;
     height: 800px;
     width: 900px;
-    padding: 10;
+    padding: 10px;
     margin: auto;
 }
 
@@ -67,7 +67,6 @@ th,td {
     font-size: medium;
 }
 p{
-    padding: auto;
     width: 300px;
     font-family: 'Arial', 'Verdana', 'Trebuchet MS','Georgia', 'Tahoma', 'Courier New', 'Times New Roman';
     font-weight: bold;
