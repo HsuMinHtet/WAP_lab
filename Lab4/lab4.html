@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Registration</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="icon-text-container">
+        <h2>Workshop Registration</h2>
+        <span>
+            <select class="more_Action" name="moreAction">
+                <option selected>More Action</option>
+                <option>Registration</option>
+            </select>
+        </span>
+    </div>
+    <p>Register now while seats are available!</p>
+    <div class="table">
+        <div class="table-row">
+            <div class="table-cell"><label>First Name <span class="star">*</span></label></div>
+            <div class="table-cell"><input type="text" name="firstName" required></div>
+            <div class="table-cell underline">Lunch</div>
+            <div class="table-cell"> </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell"> <label>Last Name <span class="star">*</span></label></div>
+            <div class="table-cell"><input type="text" name="lastName" required></div>
+            <div class="table-cell"><label>Meal Preference</label></div>
+            <div class="table-cell">
+                <select name="vegetarian">
+                    <option selected>Vegetarian</option>
+                    <option>Meat</option>
+                </select>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell"><label>Company Institution <span class="star">*</span></label></div>
+            <div class="table-cell"><input type="text" name="company" required></div>
+            <div class="table-cell underline">Payment Details</div>
+            <div class="table-cell"> </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell"><label>Address <span class="star">*</span></label></div>
+            <div class="table-cell"> <textarea rows="3" cols="16"></textarea> </div>
+            <div class="table-cell"><label>Payment Mode</label></div>
+            <div class="table-cell table">
+                <span class="checkbox-item">
+                    <input class="checkbox-item " type="checkbox" name="Cash" value="Cash" />Cash
+                </span>
+                <span class="checkbox-item">
+                    <input class="checkbox-item " type="checkbox" name="Cheque" value="Cheque" />Cheque
+                </span>
+                <span class="checkbox-item">
+                    <input class="checheckbox-item ck_box" type="checkbox" name="Demand Draft"
+                        value="Demand Draft" />Demand Draft
+                </span>
+            </div>
+        </div>
+        <!-- Add more rows and columns as needed -->
+        <div class="table-row">
+            <div class="table-cell"><label>City </label></div>
+            <div class="table-cell"><input type="text" name="city"></div>
+            <div class="table-cell"><label>DD/Cheque No.</label></div>
+            <div class="table-cell"><input type="text" name="cheque"></div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell"> <label>State/Province/Region </label></div>
+            <div class="table-cell">
+                <select name="state">
+                    <option selected>-Select-</option>
+                    <option>Fairfield</option>
+                    <option>Chicago</option>
+                </select>
+            </div>
+            <div class="table-cell"><label>Drawn On (Bank Name)</label></div>
+            <div class="table-cell"><input type="text" name="drawn"></div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell"><label>Country </label></div>
+            <div class="table-cell">
+                <select name="Country">
+                    <option selected>-Select-</option>
+                    <option>USA</option>
+                </select>
+            </div>
+            <div class="table-cell"><label>Payable at</label></div>
+            <div class="table-cell"><input type="text" name="payable" required></div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell"><label>Email <span class="star">*</span></label></div>
+            <div class="table-cell"><input type="text" name="email" required></div>
+            <div class="table-cell"></div>
+            <div class="table-cell"> </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell"><label>Phone Number <span class="star">*</span></label></div>
+            <div class="table-cell"><input type="text" name="phoneNumer" required></div>
+            <div class="table-cell"> </div>
+            <div class="table-cell"> </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="submit-btn"><input class="footer_btn" type="submit" /></div>
+        <div class="reset-btn"><input class="footer_btn" type="reset" /></div>
+    </div>
+</body>
+
+</html>

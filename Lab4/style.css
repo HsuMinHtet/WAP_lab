@@ -1,0 +1,71 @@
+.icon-text-container {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    background-color: #A2CBBC;
+}
+p{
+    text-decoration: underline;
+}
+label{
+    font-weight: bold;
+}
+.underline{
+    text-decoration: underline;
+}
+.more_Action{
+    width: 100px;
+    border-color: #A2CBBC;
+    background-color: #A2CBBC;
+    padding-left: auto;
+    margin-left: 30%;
+}
+.star{
+ color: red;
+}
+
+.table {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+}
+
+.table-row {
+    display: flex;
+    width: 100% ;
+    padding: 5px 0; /* Vertical padding between rows */
+}
+
+.table-cell {
+    width: 100%;
+    flex: 1; /* Distribute available space evenly among cells */
+    padding: 5px; /* Padding inside cells */
+}
+.checkbox-item {
+    margin-bottom: 10px;
+}
+select{
+    width: 152px;
+}
+.footer {
+    display: flex;
+    height: 30px;
+    padding: 15px 0;
+    background-color: #E3E3E3;
+}
+.footer_btn{
+    flex: 1;
+    color: white;
+    border-color: #A2CBBC;
+    background-color: #A2CBBC;
+    width: 80px;
+}
+.submit-btn {
+    display: flex;
+    width: 50%;
+    padding: 3px 3px 4px 530px;
+}
+.reset-btn {
+    display: flex;
+    width: 50%;
+    padding: 3px 543px 4px 5px;
+}
