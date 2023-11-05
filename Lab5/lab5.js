@@ -15,11 +15,11 @@ let resultArr = function getNewArray(strArr) {
 console.log(resultArr(strArr));
 
 /* No 3 Arrow Function to concat the elements of the array */
-const arrowArr = ['hi', [1, 2, 3], ['Hello', 'world']];
-/* const concat = (arrowArr) => arrowArr.flat().map(elem=>elem); */
 const concat = (arrowArr) => arrowArr.map(elem=>{
     if(typeof elem === 'string')
         return elem.split('');
     return elem;
 }).flat();
-console.log(concat(arrowArr));  /* Output: ['h', 'i', 1, 2, 3, 'Hello', 'world'] */
+console.log(concat(['hi', [1, 2, 3], ['Hello', 'world']]));  /* Output: ['h', 'i', 1, 2, 3, 'Hello', 'world'] */
+
+/* const concat = (arrowArr) => arrowArr.flat().map(elem=>elem); */
