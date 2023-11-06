@@ -22,4 +22,11 @@ const concat = (arrowArr) => arrowArr.map(elem=>{
 }).flat();
 console.log(concat(['hi', [1, 2, 3], ['Hello', 'world']]));  /* Output: ['h', 'i', 1, 2, 3, 'Hello', 'world'] */
 
+const array = ['hi', [1, 2, 3], ['Hello', 'world']]
+const array1= ['hi'];
+const array2= [1, 2, 3];
+const array3 = ['Hello', 'world'];
+const concat1=[...array1[0].split(''), ...array2, ...array3];
+console.log(concat1);
+
 /* const concat = (arrowArr) => arrowArr.flat().map(elem=>elem); */
