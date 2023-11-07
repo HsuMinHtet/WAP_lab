@@ -5,35 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <script src="./lab6.js" type="text/javascript"></script> -->
 </head>
 
 <body>
+    <h2>Outputs a number every second,(From: 1~ To: 20)</h2>
     <h1 id="title"></h1>
     <script>
-        /*         function printNumber(from, to) {
-                    
-                }
-                let f=5;
-                setTimeout(printNumber, 1000, 1, 30);
-               setInterval(()=> {document.getElementById('title').textContent= printNumber(1,30)
-            },1000) */
-
         function printNumbers(from, to) {
-            let current = from;
-            const outputDiv = document.getElementById("title");
-
-            const intervalId = setInterval(function () {
-                outputDiv.textContent += current;
-                if (current === to) {
-                    clearInterval(intervalId); // Stop the interval when we reach 'to'
+            const interval= setInterval(() => {
+                document.getElementById("title").textContent=from;
+                if(from===to){
+                    clearInterval(interval);
                 }
-                current++;
-            }, 1000); // 1000 milliseconds = 1 second
+                from++;
+            }, 1000);
         }
-
-        // Example usage:
-        printNumbers(1, 5);
+        printNumbers(1, 20);
     </script>
 </body>
 
