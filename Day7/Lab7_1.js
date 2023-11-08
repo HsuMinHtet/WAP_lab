@@ -39,13 +39,14 @@ let group2 = {
     title: "Our Group",
     students: ["John", "Pete", "Alice"],
     showList: function () {
-        this.students.forEach(function (student) {
-            console.log(this.title + ": " + student
-            );
+        this.students.forEach((student) => {
+            return function (student) {
+                console.log(this.title + ": " + student);
+            }.call(this,student);
         });
     }
 };
-group2.showList.call(group2);
+group2.showList();
 console.log("*************************");
 
 /* Solution :4 (Apply) */
@@ -54,13 +55,15 @@ let group3 = {
     title: "Our Group",
     students: ["John", "Pete", "Alice"],
     showList: function () {
-        this.students.forEach(function (student) {
-            console.log(this.title + ": " + student
-            );
+        this.students.forEach((student) => {
+            return function (student) {
+                console.log(this.title + ": " + student);
+            }
+                .apply(this, [student]);
         });
     }
 };
-group3.showList.apply(group3);
+group3.showList(group3);
 console.log("*************************");
 
 
@@ -73,8 +76,8 @@ let group4 = {
         this.students.forEach(function (student) {
             console.log(this.title + ": " + student
             );
-        });
+        }.bind(this));
     }
 };
-group4.showList.bind(group4)();
+group4.showList(group4);
 console.log("*************************")
