@@ -39,10 +39,11 @@ let group2 = {
     title: "Our Group",
     students: ["John", "Pete", "Alice"],
     showList: function () {
+        const print = function (student) {
+            console.log(this.title + ": " + student);
+        }
         this.students.forEach((student) => {
-            return function (student) {
-                console.log(this.title + ": " + student);
-            }.call(this,student);
+            print.call(this, student);
         });
     }
 };
