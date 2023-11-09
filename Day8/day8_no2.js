@@ -15,11 +15,11 @@ Student.prototype.computeAverage= function (){
 }
 
 let stu1 = new Student('John','Smith');
-stu1.grade= stu1.inputNewGrade.bind(stu1,99)();
-stu1.grade= stu1.inputNewGrade.bind(stu1,100)();
-console.log(stu1.computeAverage.bind(stu1)());
+stu1.grade=stu1.inputNewGrade(99);
+stu1.grade= stu1.inputNewGrade(100);
+console.log(stu1.computeAverage());
 
 let stu2 = new Student('Edward','Hopkins');
-stu2.grade= stu1.inputNewGrade.bind(stu2,80)();
-stu2.grade= stu1.inputNewGrade.bind(stu2,98)();
-console.log(stu1.computeAverage.bind(stu2)());
+stu2.grade= stu1.inputNewGrade(80);
+stu2.grade= stu1.inputNewGrade(98);
+console.log(stu1.computeAverage());
