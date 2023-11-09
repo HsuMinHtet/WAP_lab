@@ -29,7 +29,7 @@ LinkedList.prototype.remove= function(val,prev){
     }
 }
 
-linkedlist = new LinkedList(1);
+let linkedlist = new LinkedList(1);
 linkedlist.add(2);
 linkedlist.add(3);
 linkedlist.print(); //Expected Result: LinkedList{1,2,3};

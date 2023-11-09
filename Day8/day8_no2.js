@@ -7,7 +7,6 @@ function Student(firstname, lastname){
 Student.prototype.inputNewGrade= function(newGrade){
     this.grade.push(newGrade);
     return this.grade;
-
 }
 // computeAverage(): return average of the grades
 Student.prototype.computeAverage= function (){
