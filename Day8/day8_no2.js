@@ -22,3 +22,10 @@ let stu2 = new Student('Edward','Hopkins');
 stu2.grade= stu1.inputNewGrade(80);
 stu2.grade= stu1.inputNewGrade(98);
 console.log(stu1.computeAverage());
+
+//multi level inheritance 
+let studentObj= Object.create(stu1);
+studentObj.grade= studentObj.inputNewGrade(100);
+studentObj.grade= studentObj.inputNewGrade(100);
+studentObj.grade= studentObj.inputNewGrade(100);
+console.log(stu1.computeAverage());
