@@ -13,7 +13,7 @@ Hellow World (At Browser )
 Window has message and logMessage() funcion
 
 underfined (At NodeJs)
-Node has no Window but it has global object
-logMessage() funcion is in the global,
+message is not in global because it is inside the wrapper function
+this keyword is global object
 message should be global object property to solve the problem
 */
