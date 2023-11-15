@@ -1,0 +1,7 @@
+totally 6 callbacks in Node.js are as follow.
+1) timers: callbacks scheduled by setTimeout() and setInterval().
+2) pending callbacks: executes I/O callbacks
+3) idle, prepare: used internally(developer don't know)
+4) poll: timers and pending callbacks will block and wait in here
+5) check: setImmediate() callbacks are invoked here.
+6) close callbacks: some close callbacks, e.g.socket.on('close', ...)
