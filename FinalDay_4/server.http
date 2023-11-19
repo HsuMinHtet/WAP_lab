@@ -1,0 +1,31 @@
+GET http://localhost:3000/books
+
+####
+GET http://localhost:3000/books/1
+
+####
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "title": "WAP",
+    "ISBN": "231133322",
+    "publishedDate": "02/01/2018",
+    "author": "Tina"
+}
+
+####
+PUT http://localhost:3000/books/4
+Content-Type: application/json
+
+{
+    "title": "Algo",
+    "ISBN": "232323223",
+    "publishedDate": "02/01/2025",
+    "author": "Nair"
+}
+
+####
+DELETE http://localhost:3000/books/6
+
+
