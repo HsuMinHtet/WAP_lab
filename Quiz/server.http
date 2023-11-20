@@ -1,0 +1,18 @@
+Get http://localhost:3000/books
+
+###
+Get http://localhost:3000/books/2
+
+###
+Get http://localhost:3000/books?firstname=Edward
+
+###
+POST http://localhost:3000/books/
+Content-Type: application/json
+
+{
+    "title": "Java",
+    "authorId": "1",
+    "firstname": "Jim",
+    "lastname": "Micheal"
+}
