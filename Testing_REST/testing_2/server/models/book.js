@@ -33,7 +33,7 @@ module.exports= class Book{
     //fname with E
     static getBookByFnameContain(ch){
         const searchChar=ch.toLowerCase();
-        return books.filter(b=>b.author.firstname.toLowerCase().includes('e'));
+        return books.filter(b=>b.author.firstname.toLowerCase().includes(searchChar));
     }
 
 }
