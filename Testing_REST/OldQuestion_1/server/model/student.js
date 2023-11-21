@@ -69,6 +69,7 @@ module.exports= class Student{
         .courses.filter(c=> c.semester.includes(semester))
         .reduce((accum,elem,index,arr)=> accum+elem.grade/arr.length,0);
         console.log(avg);
+        return ({average: avg});
     }
 
 }
