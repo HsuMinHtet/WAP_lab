@@ -1,0 +1,14 @@
+###
+POST http://localhost:3000/students/610001/courses
+Content-Type: application/json
+
+{
+    "courseId": "CS305",
+    "coursename": "This is my testing",
+    "semester": "2023-Spring",
+    "grade": 100
+}
+
+###
+GET http://localhost:3000/students/610001/getAverage?semester=2021-Spring
+
